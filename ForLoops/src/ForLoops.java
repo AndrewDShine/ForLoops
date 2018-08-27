@@ -88,16 +88,42 @@ public class ForLoops
 			int lowerBound = userBounds.nextInt();
 			System.out.println("Okay, now enter an upper bound!");
 			int upperBound = userBounds.nextInt();
+			int total = 0;
 			
-			for ()
+			for (; lowerBound<=upperBound; lowerBound++)
+				{
+					total = total + lowerBound;
+				}
+			System.out.println(total);
 		}
 		public static void showGeniusSeven()
 		{
+			Scanner userBounds = new Scanner(System.in);
+			System.out.println("Hi, user! Enter a lower bound.");
+			int lowerBound = userBounds.nextInt();
+			System.out.println("Okay, now enter an upper bound!");
+			int upperBound = userBounds.nextInt();
+			int total = 0;
 			
+			for (; lowerBound<=upperBound; lowerBound++)
+				{
+					if ((lowerBound % 3) == 0)
+						{
+							total = total + lowerBound;
+						}
+				}
+			System.out.println(total);
 		}
 		public static void showGeniusEight()
 		{
+			System.out.println("********");
 			
+			for (int i = 0; i < 9; i++)
+				{
+					System.out.println("*      *");
+				}
+			
+			System.out.println("********");
 		}
 
 
