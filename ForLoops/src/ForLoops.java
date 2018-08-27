@@ -36,6 +36,9 @@ public class ForLoops
 							case 8:
 								showGeniusEight();
 								break;
+							default :
+								System.out.print("Enter a number between 1 and 8, please.");
+								break;
 							
 						}
 						System.out.print("\n");
