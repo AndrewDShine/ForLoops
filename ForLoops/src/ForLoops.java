@@ -125,7 +125,5 @@ public class ForLoops
 			
 			System.out.println("********");
 		}
-
-
 		
 	}
