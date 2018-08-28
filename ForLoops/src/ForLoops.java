@@ -4,9 +4,11 @@ public class ForLoops
 
 		public static void main(String[] args)
 			{
+				boolean repeat = true;
 				do
 					{
 						Scanner userInput = new Scanner(System.in);
+						Scanner userStrings = new Scanner(System.in);
 						//change
 						System.out.println("Which challenge (1-8) would you like to see?");
 						int challengeNumber = userInput.nextInt();
@@ -41,9 +43,23 @@ public class ForLoops
 								break;
 							
 						}
-						System.out.print("\n");
+						System.out.println("Would you like to keep running challenges? (yes/no)");
+						String userAnswer = userStrings.nextLine();
+						if (userAnswer.contains("yes") || userAnswer.contains("Yes"))
+						{
+							repeat = true;
+						}
+						else if (userAnswer.contains("no") || userAnswer.contains("No"))
+						{
+							System.out.println("Bye!");
+							repeat = false;
+						}
+						else
+						{
+							System.out.println("Input not recognized, running challenge loop again.");
+						}
 					}
-				while (true);
+				while (repeat);
 				
 			}
 		public static void showGeniusOne()
